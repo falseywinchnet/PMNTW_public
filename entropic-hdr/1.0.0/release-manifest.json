@@ -1,0 +1,155 @@
+{
+  "artifacts": [
+    {
+      "architectures": [
+        "x86_64"
+      ],
+      "binary_sha256": "75d4a4be9897eb4703fdef9597a89683082701ca95f95d6350027eff5a7777e7",
+      "bytes": 145882,
+      "filename": "entropic-hdr-1.0.0-windows-x64.zip",
+      "install_location": "C:\\ProgramData\\obs-studio\\plugins\\entropic-hdr",
+      "kind": "binary",
+      "module": "entropic-hdr",
+      "platform": "windows-x64",
+      "sha256": "2b908fb1c5ce32e6eaf273d7753b2f7d974e5846b5503fbbc3b73a288c43b397",
+      "version": "1.0.0"
+    },
+    {
+      "architectures": [
+        "arm64",
+        "x86_64"
+      ],
+      "binary_sha256": "350b8618b374fcb78457d092670ab5a4f5d53488f255d6c2fccbdc3c4055ecfb",
+      "bytes": 86263,
+      "filename": "entropic-hdr-1.0.0-macos-universal.zip",
+      "install_location": "~/Library/Application Support/obs-studio/plugins/entropic-hdr.plugin",
+      "kind": "binary",
+      "module": "entropic-hdr",
+      "platform": "macos-universal",
+      "sha256": "331f5b2ae643e570d6c38fb9ae374f25c70bdade1d897bab5ebdfeb29b8ecf66",
+      "version": "1.0.0"
+    },
+    {
+      "architectures": [
+        "x86_64"
+      ],
+      "binary_sha256": "28d6f96c72b7cb0cc67abe5b2bde80d638dd60d4fda1e31ccb9bfaf67c345a12",
+      "bytes": 138933,
+      "filename": "entropic-hdr-1.0.0-linux-x64.tar.gz",
+      "install_location": "~/.config/obs-studio/plugins/entropic-hdr",
+      "kind": "binary",
+      "module": "entropic-hdr",
+      "platform": "linux-x64",
+      "sha256": "0998fe4ddb969268b56349b56d83a6756fac9db8d8d3a4307da99b995375298c",
+      "version": "1.0.0"
+    },
+    {
+      "bytes": 85041,
+      "filename": "entropic-hdr-1.0.0-source.tar.gz",
+      "kind": "source",
+      "sha256": "db44bccaac16a37f373dbc0974dc31a368aa1f0363deb0eae26e491aad54e381"
+    }
+  ],
+  "derived_from": {
+    "modified": [
+      "docs/ENTROPY_OPTIMIZATION.md",
+      "obs/Info.plist.in",
+      "obs/entropic-hdr-filter.cpp",
+      "tools/entropy_demo.cpp",
+      "tools/entropy_obs_smoke.mm",
+      "tools/package-release.py"
+    ],
+    "module": "realtime-vector-fx 0.4.0",
+    "new": [
+      "CMakeLists.txt",
+      "README.md",
+      "include/entropic_hdr/defaults.hpp",
+      "obs/plugin-main.cpp",
+      "tools/audit-binaries.py",
+      "tools/build-release.sh",
+      "tools/dual_module_smoke.mm",
+      "tools/pe_info.py",
+      "tools/run-macos-checks.sh",
+      "tools/verify-digests.py"
+    ],
+    "release": "2026.09.10",
+    "source_archive": "obs-plugins-2026.09.10-source.tar.gz",
+    "source_archive_sha256": "b6291ee4700b10e5d32d990981259bf9a9470dd39659388ea06ea7698f1f0f49",
+    "unchanged": [
+      "docs/ENTROPY_CHAINS.md",
+      "docs/ENTROPY_STRETCH.md",
+      "docs/ENTROPY_VERIFICATION.md",
+      "include/rvfx/entropy_stretch.hpp",
+      "src/entropy_stretch.cpp",
+      "tests/reference/entropy_filter_v1.cpp",
+      "tests/reference/entropy_stretch_v1.cpp",
+      "tests/reference/entropy_stretch_v1.hpp",
+      "tests/test_entropy_chains.cpp",
+      "tests/test_entropy_stretch.cpp",
+      "toolchains/linux-x64.cmake",
+      "toolchains/windows-x64.cmake",
+      "tools/entropy_benchmark.cpp",
+      "tools/inspect-module.cpp",
+      "tools/prepare-zig-wrappers.py"
+    ]
+  },
+  "licenses": "Project source MIT; OBS-linked binaries GPL-2.0-or-later; bundled dependency/runtime notices.",
+  "linux_toolchain": "Zig 0.14.1 / Clang 19.1.7, x86_64-linux-gnu.2.35, static libc++",
+  "macos_toolchain": "Apple Clang 21.0.0.21000101, SDK 26.5, deployment target 13.0",
+  "obs_headers": "32.2.1",
+  "release": "2026.10.16",
+  "release_source_commit": "923a3c74324ca85f1b0170f3e110a2106ef14143",
+  "runtime_verification": {
+    "linux_x64": "Cross-built; ELF dependencies/exports inspected; not native runtime tested",
+    "macos_arm64": "Native OBS 32.2.1 libobs/Metal rendering: shipped and 0.4.0 looks, Chains, CPU/GPU agreement, freeze, zero-strength exact bypass, HDR passthrough; single registration with Realtime Vector FX 0.4.0 loaded in either order",
+    "macos_x86_64": "Module load, registration, defaults and properties under Rosetta on Apple Silicon; not native Intel hardware testing",
+    "windows_x64": "Cross-built; imports/exports inspected; not native runtime tested"
+  },
+  "schema": "pmnw.obs-release-v1",
+  "simde": "0.8.2",
+  "source_files": {
+    "CMakeLists.txt": "114f03ed94877372d1362c556bffc64346ee526e316a187f2ad852b5d703ac66",
+    "README.md": "441212f4c1bec64f82bf1ea89d5c82bfc44c6de6444b1795083c2382a5a576f8",
+    "docs/ENTROPY_CHAINS.md": "1cd97ba9b09959968fe578030ed107b7e76008de6fae46dea8b5a4606c575632",
+    "docs/ENTROPY_OPTIMIZATION.md": "ca97ec116e1daa78c8e01e98053b546f67132ed0d1c732883d00e070027926ef",
+    "docs/ENTROPY_STRETCH.md": "973f7187187b8bf39a3f8f511ea89fe5a371638cd31d26488c23a9f89be2d406",
+    "docs/ENTROPY_VERIFICATION.md": "0a1d4583713573b6d43706e6eac9b08f9ea40b2e6882107e63efb6b188ea6600",
+    "include/entropic_hdr/defaults.hpp": "394d777456d0edc93491428b6c8eebb0fc5da6ba727293a2170fb5a4064a7aec",
+    "include/rvfx/entropy_stretch.hpp": "b56d43eca7e27d9fd0641eded7069849b68f68ca0a04c5b468eb627ab806270b",
+    "licenses/BFFT-MIT.txt": "a03d30bb4f88439a5403d76cf44ef66a818d85327312cf20f9bf42f95b970cf5",
+    "licenses/GCC-GPL-3.0.txt": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "licenses/GCC-Runtime-Exception.txt": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+    "licenses/LLVM-libcxx.txt": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+    "licenses/LLVM-libcxxabi.txt": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+    "licenses/MinGW-runtime.txt": "1db8da07b436c68833c0673ffee3d9fcb2526047f3820b81661865dfedc79a1f",
+    "licenses/MinGW-w64.txt": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f",
+    "licenses/MinGW-winpthreads.txt": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177",
+    "licenses/OBS-GPL-2.0.txt": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "licenses/SIMDe-MIT.txt": "75ce0a8c5a7bff42fbd6f8f3b469b518132132c4f4948fb8d02b1ccb5d0df9d8",
+    "obs/Info.plist.in": "32e6b3dc30325a18db55f737ba1e77742ab6bdc7e12aca2a45fb72bbe55dfb9a",
+    "obs/entropic-hdr-filter.cpp": "018cc1f2cf23a4983ada94925aa5d5f599bcdaa5b205493483e10f7f3df64063",
+    "obs/plugin-main.cpp": "b83858895ca5a48f7d79b2cc099466a4e65a8f2e03b9e1707a3bcc599fa92dfb",
+    "src/entropy_stretch.cpp": "d29219e0c8905c9606f14926d99e7877544998c43d3717e164adb17691e47001",
+    "tests/reference/entropy_filter_v1.cpp": "e29314aa8f0f93981e0d5af3df8675f33dbe805095841ff36301b6f8cf54d8ab",
+    "tests/reference/entropy_stretch_v1.cpp": "9b0a6204c5d123091e0b29cabce8d86db32d8ca3784b4a7c7380f3bc63d8177d",
+    "tests/reference/entropy_stretch_v1.hpp": "f57d01f5b649db17faf78c746d2afae5b7026306da731771f5add972c7d1ba7b",
+    "tests/test_entropy_chains.cpp": "a7598e0abcc5f79365e36192fcb25ca9e672efe155d3d08a9f8f8857011f98d1",
+    "tests/test_entropy_stretch.cpp": "b0050d77e349bb9518437f5f0be9e472ce750ab4f3ef15f9c0df61e48558679e",
+    "toolchains/linux-x64.cmake": "8ba08c08b1ba82b1232e8f5ee3820bf3d810391966ad825d0291070b160075e1",
+    "toolchains/windows-x64.cmake": "2666c611eab3366dfe9498e6eaae69c40506fdf52f3708c3257187184d11a55a",
+    "tools/audit-binaries.py": "abd09c7c3b40bee278f4682fe92b95af824663005b898073b3b6279ed4e569fc",
+    "tools/build-release.sh": "63dd4dfec384f646d766e062704bfa4ca0c854d2b848bcd365d5c90951842857",
+    "tools/dual_module_smoke.mm": "4d6dbdac07df63d43d25c5ae9737e19402223569635ce323589906abcc3ddaa6",
+    "tools/entropy_benchmark.cpp": "c09a41b22662868465941984a5203d38a70aa9e7da7eee4a71b6a86c4d6e3ead",
+    "tools/entropy_demo.cpp": "43d75aa60da9c3e592b5ec9ddd8d43bf4ef46258e209c8ff3639c45af5fa5cb6",
+    "tools/entropy_obs_smoke.mm": "c6e60fe4997a27f6354ab9ca308d967d706a8d00abd76b133e2ce56f1e4bdde7",
+    "tools/inspect-module.cpp": "b29264b6b545e2821c522888415b196c2f5d89f69e60ac1b8b82a2caeaa93c93",
+    "tools/package-release.py": "ab890cae3edb27dd9357b6859449c2dac563b5e34abbf75cd0c2a0f168d29e93",
+    "tools/pe_info.py": "719d63e19399f65b2dcf3ba1d3d70ecc9b2796a1e32d030f8fdbacd32fc16cb0",
+    "tools/prepare-zig-wrappers.py": "fb77ceab26416d086c2ce8a7c779efee86bf30d702ccc23863bc94ec9d3c11ca",
+    "tools/run-macos-checks.sh": "b1f1c9c063138db28b92de7f7d15f66dd9943284b6b7ed17b7cdff31373e7ffc",
+    "tools/verify-digests.py": "524790316263816b1b10f2e94dcad277108d4f6e262b21309fecd33efa738240"
+  },
+  "source_tree_sha256": "ad1f69b9d539d958f5d052890e2339de10c1f894e61bbeab8d694b47a103afe7",
+  "windows_toolchain": "GCC 16.1.0 / MinGW-w64 14.0.0, x86_64 baseline, static runtime"
+}
